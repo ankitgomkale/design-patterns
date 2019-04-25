@@ -13,10 +13,11 @@ public class EnemyShipTesting {
 		
 		if (userInput.hasNextLine()){
 			String typeOfShip = userInput.nextLine();
+			//Client doesn't have to worry about creating object. That onus is 
+			//taken by the factory object. 
 			theEnemy = shipFactory.makeEnemyShip(typeOfShip);
 			
 			if(theEnemy != null){
-				
 				doStuffEnemy(theEnemy);
 				
 			} else {
